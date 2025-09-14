@@ -52,6 +52,12 @@
       gap: 10px;
     }
 
+    .link-row {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
     .download-link {
       background-color: rgba(174, 81, 255, 0.2);
       color: #fff;
@@ -60,14 +66,45 @@
       border-radius: 6px;
       font-weight: 600;
       transition: all 0.3s ease;
-      width: fit-content;
       border: 1px solid rgba(174, 81, 255, 0.4);
+      display: inline-block; /* prevent flex stretch */
+      width: auto;
     }
 
     .download-link:hover {
       background-color: rgba(174, 81, 255, 0.4);
     }
 
+
+
+
+  .warning {
+    color: #ffd966; /* soft yellow */
+    font-size: 0.95em;
+    margin: 6px 0 12px;
+    font-weight: 600;
+  }
+
+  .tutorial-link {
+    display: inline-block;
+    width: auto;
+    padding: 8px 16px;
+    font-weight: 600;
+    font-size: 0.95em;
+    border-radius: 6px;
+    text-decoration: none;
+    border: 1px solid rgba(52, 152, 219, 0.5);
+    background-color: rgba(52, 152, 219, 0.2);
+    color: #4da6ff;
+    transition: all 0.2s ease;
+    align-self: flex-start;
+  }
+
+  .tutorial-link:hover {
+    background-color: rgba(52, 152, 219, 0.35);
+    color: #fff;
+  }
+  
     .footer {
       margin-top: 60px;
       text-align: center;
@@ -95,6 +132,10 @@
       .platform-section h2 {
         font-size: 1.4em;
       }
+
+      .link-row {
+        flex-direction: column;
+      }
     }
   </style>
 </head>
@@ -105,43 +146,60 @@
     <h2>Android</h2>
     <div class="version-status">Latest version: v689 | ✅ Working [2025-09-14]</div>
     <div class="links">
-      <a href="https://krnl.webfiles.pro/android.html" class="download-link" target="_blank">Download</a>
-      <a href="https://gofile.io/d/c7RfzZ" class="download-link" target="_blank">Download (alt)</a>
+      <div class="link-row">
+        <a href="https://krnl.webfiles.pro/android.html" class="download-link" target="_blank">Download</a>
+        <a href="https://gofile.io/d/c7RfzZ" class="download-link" target="_blank">Download (alt)</a>
+      </div>
+      <a href="tutorial.html" class="tutorial-link" target="_blank">Tutorial</a>
     </div>
   </div>
 
-  <div class="platform-section">
-    <h2>Android VNG</h2>
-    <div class="version-status">Latest version: v688 | ✅ Working [2025-09-14]</div>
-    <div class="links">
+<div class="platform-section">
+  <h2>Android VNG</h2>
+  <div class="warning">⚠️ Only use VNG if you have a Vietnamese region locked account</div>
+  <div class="version-status">Latest version: v688 | ✅ Working [2025-09-14]</div>
+  <div class="links">
+    <div class="link-row">
       <a href="https://krnl.webfiles.pro/android.html" class="download-link" target="_blank">Download</a>
       <a href="https://gofile.io/d/p6Kgvt" class="download-link" target="_blank">Download (alt)</a>
     </div>
+    <a href="tutorial.html" class="tutorial-link" target="_blank">Tutorial</a>
   </div>
+</div>
 
   <div class="platform-section">
     <h2>iOS</h2>
     <div class="version-status">Latest version: v688 | ✅ Working [2025-09-03]</div>
     <div class="links">
-      <a href="https://krnl.webfiles.pro/ios.html" class="download-link" target="_blank">Download</a>
-      <a href="https://gofile.io/d/ggZl88" class="download-link" target="_blank">Download (alt)</a>
+      <div class="link-row">
+        <a href="https://krnl.webfiles.pro/ios.html" class="download-link" target="_blank">Download</a>
+        <a href="https://gofile.io/d/ggZl88" class="download-link" target="_blank">Download (alt)</a>
+      </div>
+      <a href="tutorial.html" class="tutorial-link" target="_blank">Tutorial</a>
     </div>
   </div>
 
-  <div class="platform-section">
-    <h2>iOS VNG</h2>
-    <div class="version-status">Latest version: v685 | ❌ Not Working</div>
-    <div class="links">
+<div class="platform-section">
+  <h2>iOS VNG</h2>
+  <div class="warning">⚠️ Only use VNG if you have a Vietnamese region locked account</div>
+  <div class="version-status">Latest version: v685 | ❌ Not Working</div>
+  <div class="links">
+    <div class="link-row">
       <a href="https://krnl.webfiles.pro/ios.html" class="download-link" target="_blank">Download</a>
       <a href="https://gofile.io/d/p6afKT" class="download-link" target="_blank">Download (alt)</a>
     </div>
+    <a href="tutorial.html" class="tutorial-link" target="_blank">Tutorial</a>
   </div>
+</div>
 
   <div class="platform-section">
     <h2>iOS Direct Install</h2>
     <div class="version-status">Latest version: v688 | ✅ Working [2025-09-14]</div>
     <div class="links">
-      <a href="https://krnl-ios.com" class="download-link" target="_blank">Download</a>
+      <div class="link-row">
+        <a href="https://krnl-ios.com" class="download-link" target="_blank">Download</a>
+      </div>
+      <a href="tutorial.html" class="tutorial-link" target="_blank">Tutorial</a>
     </div>
   </div>
 
