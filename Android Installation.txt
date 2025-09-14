@@ -1,9 +1,0 @@
-Installing Krnl on Android:
-- Uninstall (Krnl) Roblox
-- Download the latest version of Krnl. If you are Vietnamese, make sure to get VNG.
-WARNING: IF YOU GET VNG, YOUR ROBLOX ACCOUNT WILL BE REGION-LOCKED TO VIETNAM AND YOU WILL NOT BE ABLE TO USE GLOBAL ROBLOX ANYMORE ON THAT ACCOUNT. THIS IS IRREVERSIBLE.
-- Click on the download and install
-- That's all!
-
-If you open Roblox and it gives an update pop-up without any "Not Now" option, join the Krnl Discord server and wait until the devs ping about an update for Krnl.
-Once they ping, follow the steps above.
