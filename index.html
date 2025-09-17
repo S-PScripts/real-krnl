@@ -22,7 +22,15 @@
       color: #d9b4ff;
       font-size: 3em;
       font-weight: 700;
+      margin-bottom: 10px;
+    }
+
+    .subtitle {
+      text-align: center;
+      color: #aaa;
+      font-size: 1.1em;
       margin-bottom: 40px;
+      font-weight: 400;
     }
 
     .platform-section {
@@ -67,7 +75,7 @@
       font-weight: 600;
       transition: all 0.3s ease;
       border: 1px solid rgba(174, 81, 255, 0.4);
-      display: inline-block; /* prevent flex stretch */
+      display: inline-block;
       width: auto;
     }
 
@@ -75,36 +83,33 @@
       background-color: rgba(174, 81, 255, 0.4);
     }
 
+    .warning {
+      color: #ffd966;
+      font-size: 0.95em;
+      margin: 6px 0 12px;
+      font-weight: 600;
+    }
 
+    .tutorial-link {
+      display: inline-block;
+      width: auto;
+      padding: 8px 16px;
+      font-weight: 600;
+      font-size: 0.95em;
+      border-radius: 6px;
+      text-decoration: none;
+      border: 1px solid rgba(52, 152, 219, 0.5);
+      background-color: rgba(52, 152, 219, 0.2);
+      color: #4da6ff;
+      transition: all 0.2s ease;
+      align-self: flex-start;
+    }
 
-
-  .warning {
-    color: #ffd966; /* soft yellow */
-    font-size: 0.95em;
-    margin: 6px 0 12px;
-    font-weight: 600;
-  }
-
-  .tutorial-link {
-    display: inline-block;
-    width: auto;
-    padding: 8px 16px;
-    font-weight: 600;
-    font-size: 0.95em;
-    border-radius: 6px;
-    text-decoration: none;
-    border: 1px solid rgba(52, 152, 219, 0.5);
-    background-color: rgba(52, 152, 219, 0.2);
-    color: #4da6ff;
-    transition: all 0.2s ease;
-    align-self: flex-start;
-  }
-
-  .tutorial-link:hover {
-    background-color: rgba(52, 152, 219, 0.35);
-    color: #fff;
-  }
-  
+    .tutorial-link:hover {
+      background-color: rgba(52, 152, 219, 0.35);
+      color: #fff;
+    }
+    
     .footer {
       margin-top: 60px;
       text-align: center;
@@ -141,7 +146,8 @@
 </head>
 <body>
   <h1>Krnl Downloads</h1>
-
+  <p class="subtitle">An unofficial website about Krnl.</p>
+  
   <div class="platform-section">
     <h2>Android</h2>
     <div class="version-status">Latest version: v689 | ✅ Working UNDETECTED [2025-09-14]</div>
@@ -239,7 +245,7 @@
   <div class="footer">
     <p>Official website: <a href="https://krnl.cat" >krnl.cat</a></p>
     <p>Official Discord: <a href="https://discord.gg/getkrnl" >discord.gg/getkrnl</a></p>
-    <p>THIS WEBSITE IS SAFE. Information added by <a href="https://discord.com/users/1173194312067059802" >ts2021</a>.</p>
+    <p>This website is safe! Information added by <a href="https://discord.com/users/1173194312067059802" >ts2021</a>.</p>
   </div>
 </body>
 </html>
