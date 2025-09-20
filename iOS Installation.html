@@ -3,9 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Krnl iOS Tutorial</title>
+  <title>Krnl iOS Installation Tutorial</title>
   <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@400;700&display=swap" rel="stylesheet">
-
   <style>
     body {
       margin: 0;
@@ -15,30 +14,25 @@
       color: white;
       line-height: 1.6;
     }
-
     h1, h2, h3 {
       color: #d9b4ff;
     }
-
     h1 {
       text-align: center;
       font-size: 2.3em;
       font-weight: 700;
       margin-bottom: 30px;
     }
-
     h2 {
       font-size: 1.8em;
       margin-top: 40px;
       margin-bottom: 15px;
     }
-
     h3 {
       font-size: 1.3em;
       margin-top: 20px;
       margin-bottom: 10px;
     }
-
     .content {
       max-width: 900px;
       margin: 0 auto;
@@ -48,26 +42,21 @@
       box-shadow: 0 0 20px rgba(174, 81, 255, 0.15);
       border: 1px solid rgba(255, 255, 255, 0.05);
     }
-
     ol {
       margin: 0;
       padding-left: 20px;
     }
-
     li {
       margin-bottom: 10px;
     }
-
     a {
       color: #4da6ff;
       text-decoration: none;
       font-weight: 600;
     }
-
     a:hover {
       text-decoration: underline;
     }
-
     .warning {
       margin: 15px 0;
       padding: 15px;
@@ -77,7 +66,6 @@
       color: #ffd966;
       font-weight: 600;
     }
-
     .footer {
       margin-top: 40px;
       text-align: center;
@@ -86,63 +74,68 @@
       border-top: 1px solid #2a1e3d;
       padding-top: 15px;
     }
-
     .footer a {
       color: #d9b4ff;
       text-decoration: none;
       font-weight: bold;
     }
-
     .footer a:hover {
       text-decoration: underline;
     }
   </style>
 </head>
 <body>
-  <h1>Installing Krnl on iOS (IPA Method with KSign)</h1>
+  <h1>Installing Krnl on iOS (IPA Method with KSign/ESign)</h1>
+  <div class="content">
+    <div class="warning">
+      ⚠️ If this method seems difficult, try <a href="iOS DI Installation.html" target="_blank">Direct Install</a>.
+    </div>
 
- <div class="content">
+    <h2>Preparation</h2>
+    <ol>
+      <li>Delete your current version of Krnl Roblox.</li>
+      <li>Go to <a href="https://khoindvn.io.vn" target="_blank">https://khoindvn.io.vn</a></li>
+      <li>Click on <strong>Install DNS Profile</strong>.</li>
+      <li>Go to <strong>System Settings → General → VPN and Device Management</strong>. Install the DNS Profile.</li>
+      <li>On your Home Screen, a bookmark will appear. Click it.</li>
+      <li>Scroll to <strong>ESign/KSign bypass</strong> and download one of them (such as Global Takeoff).</li>
+      <li>Click on ESign/KSign and make sure you don't get an integrity error (if you do, use another ESign/KSign).</li>
+      <li>Go to <strong>System Settings → VPN and Device Management</strong>. Trust the enterprise app and restart.</li>
+      <li>Download the Krnl IPA by going to <a href="https://krnl.cat" target="_blank">https://krnl.cat</a> or typing <code>?tag zip-ios</code> in chat.</li>
+    </ol>
 
-   <div class="warning">
-  ⚠️ If you find this to be hard, try <a href="iOS DI Installation.html" target="_blank">Direct Install</a>.
-</div>
-   
-  <ol>
-    <li>Delete your current version of Krnl Roblox.</li>
-    <li>Go to <a href="https://khoindvn.io.vn" target="_blank">https://khoindvn.io.vn</a></li>
-  </ol>
+    <div class="warning">
+      ⚠️ Only use VNG if you have a Vietnamese region-locked account.<br>
+      Installing VNG will permanently lock your Roblox account to Vietnam.  You will not be able to use global Roblox anymore on that account.
+      This is <u>irreversible</u>.
+    </div>
 
-  <ol start="3">
-    <li>Click on <strong>Install DNS Profile</strong>.</li>
-    <li>Go to <strong>System Settings → General → VPN and Device Management</strong>. Trust the DNS Profile.</li>
-    <li>On your Home Screen, a bookmark will appear. Click it.</li>
-    <li>Scroll to <strong>KSign bypass</strong> and download one of them (such as Global Takeoff).</li>
-    <li>Click on KSign and make sure you don’t get an integrity error (if you do, use another KSign).</li>
-    <li>Go to <strong>System Settings → VPN and Device Management</strong>. Trust the enterprise app and restart.</li>
-    <li>Download the Krnl (VNG) IPA.</li>
-  </ol>
+    <h3>KSign Method</h3>
+    <ol>
+      <li>Open KSign and click the plus (+) button.</li>
+      <li>Click <strong>Import Files</strong> and add your IPA file (you might then need to rename it to remove <code>.zip</code>).</li>
+      <li>Go back to Khoindvn and click <strong>Download Certificates</strong>.</li>
+      <li>Go to KSign again and import the Certs zip.</li>
+      <li>Extract the Cert zip.</li>
+      <li>Click the Cert-Khoindvn folder → Click Certs Khoindvn → Click KSign Cert → Click your KSign cert. After that, click <strong>Import Certificate</strong>.</li>
+      <li>Click the Krnl IPA and click <strong>Import to Library</strong>.</li>
+      <li>Wait until Krnl shows in Downloaded Apps in Library.</li>
+      <li>Click it and click <strong>Sign and Install</strong>. Press Start Signing and wait. Click install when prompted.</li>
+      <li>Wait until the new KSign app installs which will turn into a Krnl. You can now click it and play Roblox.</li>
+    </ol>
 
-  <!-- Warning outside the ol -->
-  <div class="warning">
-    ⚠️ Only use VNG if you have a Vietnamese region-locked account.<br>
-    If you install VNG, your Roblox account will be permanently locked to the Vietnam region.  
-    You will not be able to use global Roblox anymore on that account.  
-    This is <u>irreversible</u>.
-  </div>
-
-  <ol start="10">
-    <li>Open KSign and click the plus (+) button.</li>
-    <li>Click <strong>Import files</strong> and add your IPA file (you may need to rename it to remove <code>.zip</code>).</li>
-    <li>Go back to Khoindvn and click <strong>Download Certificates</strong>.</li>
-    <li>Go to KSign again and import the Cert zip.</li>
-    <li>Extract the Cert zip.</li>
-    <li>Click the cert khoindvn folder → click certs khoindvn → click ksign cert → click global takeoff.ksign → then click <strong>Import cert</strong>.</li>
-    <li>Click the Krnl IPA and click <strong>Import to Library</strong>.</li>
-    <li>Wait until Krnl shows in Downloaded Apps in Library.</li>
-    <li>Click it and click <strong>Sign and Install</strong>. Press Start Signing and wait. Click install when prompted.</li>
-    <li>Wait until the new KSign app installs, which will turn into Krnl. You can now click it and play Roblox.</li>
-  </ol>
-
+    <h3>ESign Method</h3>
+    <ol>
+      <li>Open ESign and click the <strong>...</strong> button.</li>
+      <li>Click <strong>Import</strong> and add your IPA file.</li>
+      <li>Go back to Khoindvn and click <strong>Download Certificates</strong>.</li>
+      <li>Go to ESign again and import the Certs zip.</li>
+      <li>Unzip the Certs zip.</li>
+      <li>Click the Certs-Khoindvn folder → Click ESign Cert → Click your ESign cert. After that, click <strong>Import Certificate Management</strong>.</li>
+      <li>Click the Krnl IPA and click <strong>Import App Library</strong>.</li>
+      <li>Wait until Krnl shows in Apps.</li>
+      <li>Click it and click <strong>Signature</strong>. If it says a revoked message, you can still install Krnl but it will stop working after a while.</li>
+    </ol>
 
     <p>
       If you open Roblox and it gives an update pop-up without any "Not Now" option, join the 
@@ -150,17 +143,15 @@
       and wait until the devs ping about an update for Krnl. Once they ping, follow the steps above.
     </p>
     <p> When Krnl updates, uninstall Krnl, get the latest IPA, and import that again.</p>
-
+    
     <div class="warning">
-      ⚠️ If you get integrity errors, use another KSign/Esign or sideload with a PC.
+      ⚠️ If you get integrity errors, use another KSign/ESign or sideload with a PC.<br>
+      When Krnl updates, uninstall Krnl, get the latest IPA, and import it again.
     </div>
 
-   <div class="warning">
-  Video Tutorial (ESign): 
-  <a href="https://www.youtube.com/shorts/S_muHZA0Edg" target="_blank">
-    Click Here
-  </a>
-</div>
+    <div class="warning">
+      🎥 Video Tutorial (ESign): <a href="https://www.youtube.com/shorts/S_muHZA0Edg" target="_blank">Click Here</a>
+    </div>
 
     <h2>Sideload with a Computer (if Direct Install and all KSigns/ESigns fail)</h2>
     <div class="warning">
@@ -186,10 +177,10 @@
       <li>On your phone, Krnl should have downloaded. Go to <strong>VPN and Device Management</strong>, trust the app, then enable developer mode in <strong>Privacy and Security</strong>.</li>
       <li>After restarting, you should be able to open Krnl!</li>
     </ol>
-  </div>
 
-  <div class="footer">
-    <p><a href="index.html">⬅ Back to Downloads</a></p>
+    <div class="footer">
+      <p><a href="index.html">⬅ Back to Downloads</a></p>
+    </div>
   </div>
 </body>
 </html>
