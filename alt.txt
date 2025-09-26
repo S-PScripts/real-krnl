@@ -487,7 +487,7 @@
             </a>
           </div>
           <a href="Android Installation.html" class="tutorial-btn">
-            Tutorial (emulator)
+            Tutorial
           </a>
         </div>
       </div>
@@ -580,7 +580,7 @@
         </div>
         <div class="platform-actions">
           <a href="Android Installation.html" class="tutorial-btn">
-            Tutorial
+            Tutorial (emulator)
           </a>
         </div>
       </div>
