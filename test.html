@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Krnl Downloads</title>
+  <meta name="description" content="Download Krnl — unofficial mirrors and installation tutorials for Android and iOS." />
+  <link rel="canonical" href="https://reals-p.site/real-krnl/">
+
+  <!-- Schema.org / Structured data -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "Krnl",
+      "url": "https://reals-p.site/real-krnl/",
+      "applicationCategory": "DeveloperTool",
+      "operatingSystem": ["iOS", "Android"]
+    }
+  </script>
+
+  <!-- Open Graph & Twitter -->
+  <meta property="og:title" content="Krnl Downloads" />
+  <meta property="og:description" content="Download Krnl — unofficial mirrors and installation tutorials for Android and iOS." />
+  <meta property="og:image" content="https://krnl.cat/assets/Krnl_Logo.svg" />
+  <meta property="og:url" content="https://reals-p.site/real-krnl/" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <!-- Preload & Font -->
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Epilogue:wght@400;700&display=swap" as="style">
+  <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@400;700&display=swap" rel="stylesheet" />
+
+  <link rel="icon" type="image/svg+xml" href="https://krnl.cat/assets/Krnl_Logo.svg">
+
+  <style>
+    :root{
+      --accent: rgba(174,81,255,1);
+      --card-bg: rgba(255,255,255,0.03);
+      --muted: #d0d0d6;
+      --bg-1: #12051a;
+      --bg-2: #0b0710;
+    }
+
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body {
+      margin: 0;
+      padding: 20px 18px 80px;
+      font-family: 'Epilogue', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+      background: radial-gradient(circle at 20% 120%, #1a0f2e 0%, #0f0a1a 45%, #000000 100%);
+      color: #fff;
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
+      line-height:1.45;
+    }
+
+    /* Navbar */
+    nav {
+      position: sticky;
+      top: 0;
+      z-index: 999;
+      display:flex;
+      justify-content:center;
+      gap:18px;
+      padding:12px 16px;
+      margin-bottom:18px;
+      background: linear-gradient(180deg, rgba(10,6,18,0.65), rgba(10,6,18,0.45));
+      backdrop-filter: blur(8px);
+      border-bottom: 1px solid rgba(255,255,255,0.03);
+      border-radius:10px;
+    }
+    nav a{color:var(--accent);text-decoration:none;font-weight:700;padding:6px 10px;border-radius:8px}
+    nav a:hover{background:rgba(174,81,255,0.12);color:#fff}
+
+    header{max-width:1000px;margin:0 auto}
+    .site-head{display:flex;align-items:center;gap:14px;justify-content:center}
+    .logo{width:56px;height:56px;display:inline-block}
+    h1{font-size:2.2rem;margin:0;color:#e9d6ff}
+    .subtitle{color:var(--muted);text-align:center;margin-top:6px;margin-bottom:20px}
+
+    .container{max-width:1000px;margin:0 auto}
+
+    .platform-section {
+      background:var(--card-bg);
+      border-radius:12px;
+      padding:18px;
+      margin-bottom:22px;
+      box-shadow: 0 6px 20px rgba(174,81,255,0.06);
+      border: 1px solid rgba(174, 81, 255, 0.06);
+      transition:transform .25s ease,box-shadow .25s ease;
+    }
+    .platform-section:focus-within, .platform-section:hover{transform:translateY(-4px);box-shadow:0 18px 40px rgba(174,81,255,0.08)}
+
+    .platform-section h2{margin:0 0 8px;font-size:1.35rem;color:#e5ccff}
+    .platform-section p{margin:0}
+    .version-status{font-size:0.98rem;color:#d9d9df;margin-bottom:10px}
+    .warning{color:#ffd966;font-weight:700;margin:8px 0}
+
+    .links{display:flex;flex-direction:column;gap:10px}
+    .link-row{display:flex;gap:12px;flex-wrap:wrap}
+
+    .download-link{
+      background: linear-gradient(180deg, rgba(174,81,255,0.14), rgba(174,81,255,0.08));
+      color:#fff;padding:10px 14px;text-decoration:none;border-radius:8px;font-weight:700;border:1px solid rgba(174,81,255,0.3);display:inline-block
+    }
+    .download-link:focus{outline:3px solid rgba(174,81,255,0.18);outline-offset:3px}
+    .download-link:hover{transform:translateY(-2px)}
+
+    .tutorial-link{display:inline-block;padding:8px 14px;border-radius:8px;text-decoration:none;border:1px solid rgba(77,166,255,0.12);background:rgba(77,166,255,0.05);color:#9fd3ff;font-weight:700}
+
+    .status-working{color:#7ee7b8;font-weight:700}
+    .status-broken{color:#ff9b9b;font-weight:700}
+
+    .footer{margin-top:30px;text-align:center;font-size:0.95rem;color:var(--muted);border-top:1px solid rgba(255,255,255,0.02);padding-top:18px}
+    .footer a{color:var(--accent);font-weight:700;text-decoration:none}
+
+    /* Back to top button */
+    #backToTop{position:fixed;right:18px;bottom:18px;background:linear-gradient(180deg,var(--accent),rgba(120,50,200,1));border:none;padding:10px 12px;border-radius:999px;color:#fff;cursor:pointer;box-shadow:0 6px 20px rgba(0,0,0,0.4);display:none}
+    #backToTop.show{display:block}
+
+    /* Modal */
+    .modal-overlay{display:none;position:fixed;inset:0;background:rgba(0,0,0,0.7);backdrop-filter:blur(4px);align-items:center;justify-content:center;z-index:1200}
+    .modal-box{background:#120a1b;border-radius:12px;padding:18px;max-width:420px;border:1px solid rgba(174,81,255,0.12)}
+    .modal-buttons{display:flex;gap:12px;justify-content:center;margin-top:14px}
+    .modal-btn{padding:10px 12px;border-radius:8px;border:none;cursor:pointer;font-weight:700}
+
+    /* responsive */
+    @media (max-width:700px){
+      body{padding:16px 12px 80px}
+      nav{gap:10px;padding:10px}
+      h1{font-size:1.55rem}
+      .logo{width:44px;height:44px}
+      .platform-section{padding:14px}
+      .link-row{flex-direction:column}
+    }
+  </style>
+</head>
+<body>
+  <nav aria-label="Primary navigation">
+    <a href="#android">Android</a>
+    <a href="#android-vng">Android VNG</a>
+    <a href="#ios">iOS</a>
+    <a href="#ios-vng">iOS VNG</a>
+    <a href="#support">Support</a>
+    <a href="#faq">FAQ</a>
+  </nav>
+
+  <header class="container site-head">
+    <div style="text-align:center;">
+      <img src="https://krnl.cat/assets/Krnl_Logo.svg" alt="Krnl logo" class="logo" aria-hidden="false">
+      <h1>Krnl Downloads</h1>
+      <p class="subtitle">An unofficial website about Krnl — mirrors and installation guides.</p>
+    </div>
+  </header>
+
+  <main class="container" id="content">
+
+    <!-- Android -->
+    <section id="android" class="platform-section" aria-labelledby="android-heading">
+      <h2 id="android-heading">Android</h2>
+      <p class="version-status">Latest version: <strong>v695</strong> | <span class="status-working">Working — Undetected</span> <span aria-hidden="true">•</span> <time datetime="2025-10-20">20 Oct 2025</time></p>
+      <div class="links">
+        <div class="link-row">
+          <a href="https://filenetwork.vip/android.html" class="download-link" rel="noopener noreferrer" target="_blank" aria-label="Download Krnl for Android (primary mirror)">Download</a>
+          <a href="https://gofile.io/d/woj7EV" class="download-link" rel="noopener noreferrer" target="_blank" aria-label="Download Krnl for Android (alternate mirror)">Download (alt)</a>
+        </div>
+        <a href="Android Installation.html" class="tutorial-link" aria-label="Android installation tutorial">Tutorial</a>
+      </div>
+    </section>
+
+    <!-- Android VNG -->
+    <section id="android-vng" class="platform-section" aria-labelledby="android-vng-heading">
+      <h2 id="android-vng-heading">Android VNG</h2>
+      <p class="warning">⚠️ Only use VNG if your Roblox account region is Vietnam.</p>
+      <p class="version-status">Latest version: <strong>v695</strong> | <span class="status-working">Working — Undetected</span> <time datetime="2025-10-25">25 Oct 2025</time></p>
+      <div class="links">
+        <div class="link-row">
+          <a href="https://filenetwork.vip/android.html" class="download-link" rel="noopener noreferrer" target="_blank" aria-label="Download Krnl Android VNG (primary)">Download</a>
+          <a href="https://gofile.io/d/jlkXzZ" class="download-link" rel="noopener noreferrer" target="_blank" aria-label="Download Krnl Android VNG (alternate)">Download (alt)</a>
+        </div>
+        <a href="Android Installation.html" class="tutorial-link" aria-label="Android VNG tutorial">Tutorial</a>
+      </div>
+    </section>
+
+    <!-- iOS -->
+    <section id="ios" class="platform-section" aria-labelledby="ios-heading">
+      <h2 id="ios-heading">iOS</h2>
+      <p class="version-status">Latest version: <strong>v695</strong> | <span class="status-working">Working — Undetected</span> <time datetime="2025-10-25">25 Oct 2025</time></p>
+      <div class="links">
+        <div class="link-row">
+          <a href="https://filenetwork.vip/ios.html" class="download-link" rel="noopener noreferrer" target="_blank" aria-label="Download Krnl for iOS (primary)">Download</a>
+          <a href="https://gofile.io/d/2A6r5C" class="download-link" rel="noopener noreferrer" target="_blank" aria-label="Download Krnl for iOS (alternate)">Download (alt)</a>
+        </div>
+        <a href="iOS Installation.html" class="tutorial-link" aria-label="iOS installation tutorial">Tutorial</a>
+      </div>
+    </section>
+
+    <!-- iOS VNG -->
+    <section id="ios-vng" class="platform-section" aria-labelledby="ios-vng-heading">
+      <h2 id="ios-vng-heading">iOS VNG</h2>
+      <p class="warning">⚠️ Only use VNG if your Roblox account region is Vietnam.</p>
+      <p class="version-status">Latest version: <strong>v685</strong> | <span class="status-broken">Not Working</span> <time datetime="2025-08-29">29 Aug 2025</time></p>
+      <div class="links">
+        <div class="link-row">
+          <a href="https://filenetwork.vip/ios.html" class="download-link" rel="noopener noreferrer" target="_blank" aria-label="Download Krnl iOS VNG (primary)">Download</a>
+          <a href="https://sub.khoindvn.io.vn/krnl.html" class="download-link" rel="noopener noreferrer" target="_blank" aria-label="Download Krnl iOS VNG (unofficial)">Download (UNOFFICIAL VERSION)</a>
+        </div>
+        <a href="iOS Installation.html" class="tutorial-link" aria-label="iOS VNG tutorial">Tutorial</a>
+      </div>
+    </section>
+
+    <!-- iOS Direct Install -->
+    <section id="ios-di" class="platform-section" aria-labelledby="ios-di-heading">
+      <h2 id="ios-di-heading">iOS Direct Install</h2>
+      <p class="warning">⚠️ Direct Install is provided by a third-party distributor; updates may take longer.</p>
+      <p class="version-status">Latest version: <strong>v695</strong> | <span class="status-working">Working — Undetected</span> <time datetime="2025-10-25">25 Oct 2025</time></p>
+      <div class="links">
+        <div class="link-row">
+          <a href="https://krnl-ios.com" class="download-link" rel="noopener noreferrer" target="_blank" aria-label="Krnl iOS direct install">Download</a>
+        </div>
+        <a href="iOS DI Installation.html" class="tutorial-link" aria-label="iOS direct install tutorial">Tutorial</a>
+      </div>
+    </section>
+
+    <!-- Windows -->
+    <section id="windows" class="platform-section" aria-labelledby="windows-heading">
+      <h2 id="windows-heading">Windows</h2>
+      <p class="warning">⚠️ Windows has not been released yet. Join the official Discord for announcements.</p>
+      <p class="version-status">Latest version: <strong>N/A</strong> | <span class="status-broken">Not Released</span></p>
+      <div class="links">
+        <a href="Android Installation.html" class="tutorial-link" aria-label="Using an emulator tutorial">Tutorial (emulator)</a>
+      </div>
+    </section>
+
+    <hr style="height:2px;border:none;background:linear-gradient(90deg,transparent,var(--accent),transparent);margin:28px 0">
+
+    <section id="support" class="platform-section" aria-labelledby="support-heading">
+      <h2 id="support-heading">Support</h2>
+
+      <div style="margin-bottom:12px">
+        <h3 style="margin:0 0 6px;font-size:1.05rem;color:#e5ccff">Key System</h3>
+        <p class="warning" style="margin:6px 0">⚠️ Keys are required to use Krnl. They reset every 24 hours.</p>
+        <p class="version-status">Supports Lootlabs &amp; Linkvertise</p>
+        <div class="links"><a href="Keysystem Tutorial.html" class="tutorial-link" aria-label="How to get your key">How to Get Your Key</a></div>
+      </div>
+
+      <div>
+        <h3 style="margin:0 0 6px;font-size:1.05rem;color:#e5ccff">Common Questions</h3>
+        <p class="version-status">Questions asked in the official Krnl Discord server</p>
+        <div class="links"><a href="Common Questions.html" class="tutorial-link" aria-label="Read common questions">Read Here</a></div>
+      </div>
+
+    </section>
+
+    <section id="faq" class="platform-section" aria-labelledby="faq-heading">
+      <h2 id="faq-heading">FAQ</h2>
+      <p class="version-status">Quick answers to frequently asked questions.</p>
+      <div class="links">
+        <a href="Common Questions.html#why-safe" class="tutorial-link" aria-label="Is this website safe">Is this website safe?</a>
+        <a href="Common Questions.html#mirrors" class="tutorial-link" aria-label="About mirrors">Mirror authenticity & verification</a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer" role="contentinfo">
+    <p>Official website: <a href="https://krnl.cat" rel="noopener noreferrer" target="_blank">krnl.cat</a></p>
+    <p>Official Discord: <a href="https://discord.gg/getkrnl" rel="noopener noreferrer" target="_blank">discord.gg/getkrnl</a></p>
+    <p>This website is managed by <a href="https://discord.com/users/1173194312067059802" rel="noopener noreferrer" target="_blank">ts2021</a>.</p>
+  </footer>
+
+  <!-- Modal Structure (VNG confirmation) -->
+  <div id="vngModal" class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="vngTitle" aria-hidden="true">
+    <div class="modal-box" role="document">
+      <h2 id="vngTitle">⚠️ Warning</h2>
+      <p>Are you sure you want to download the <strong>VNG version</strong>?<br>DO NOT INSTALL VNG UNLESS YOUR ROBLOX ACCOUNT'S REGION IS VIETNAM!</p>
+      <div class="modal-buttons">
+        <button id="confirmVNG" class="modal-btn" aria-label="Confirm VNG download">Yes, Continue</button>
+        <button id="cancelVNG" class="modal-btn" aria-label="Cancel VNG download">Cancel</button>
+      </div>
+    </div>
+  </div>
+
+  <button id="backToTop" aria-label="Back to top">↑</button>
+
+  <noscript>
+    <div style="max-width:1000px;margin:12px auto;padding:12px;background:#2a1e3d;border-radius:8px;color:#fff">JavaScript is disabled — some interactive features (modal confirmations, back-to-top) won't work. Links still function normally.</div>
+  </noscript>
+
+  <script defer>
+    (function(){
+      // Simple utilities
+      const $ = (sel, ctx=document) => ctx.querySelector(sel);
+      const $$ = (sel, ctx=document) => Array.from(ctx.querySelectorAll(sel));
+
+      // Back to top
+      const backBtn = $('#backToTop');
+      window.addEventListener('scroll', ()=>{
+        backBtn.classList.toggle('show', window.scrollY > 300);
+      });
+      backBtn.addEventListener('click', ()=>window.scrollTo({top:0,behavior:'smooth'}));
+
+      // Modal for VNG sections
+      const modal = document.getElementById('vngModal');
+      const confirmBtn = document.getElementById('confirmVNG');
+      const cancelBtn = document.getElementById('cancelVNG');
+      let focusedBeforeModal = null;
+      let pendingHref = null;
+
+      // Attach click interception to links in sections with "VNG" in heading text
+      const vngSections = Array.from(document.querySelectorAll('section'))
+        .filter(s => s.querySelector('h2') && s.querySelector('h2').textContent.includes('VNG'));
+
+      vngSections.forEach(section => {
+        const links = section.querySelectorAll('.download-link');
+        links.forEach(link => {
+          link.addEventListener('click', function(e){
+            // only intercept left clicks without ctrl/shift/meta
+            if (e.button !== 0 || e.ctrlKey || e.shiftKey || e.metaKey) return;
+            e.preventDefault();
+            pendingHref = this.href;
+            focusedBeforeModal = document.activeElement;
+            openModal();
+          });
+        });
+      });
+
+      function openModal(){
+        modal.style.display = 'flex';
+        modal.setAttribute('aria-hidden','false');
+        // focus the confirm button for keyboard users
+        confirmBtn.focus();
+        // trap focus simply
+        document.addEventListener('keydown', handleKey);
+      }
+      function closeModal(){
+        modal.style.display = 'none';
+        modal.setAttribute('aria-hidden','true');
+        document.removeEventListener('keydown', handleKey);
+        if (focusedBeforeModal) focusedBeforeModal.focus();
+        pendingHref = null;
+      }
+      function handleKey(e){
+        if(e.key === 'Escape') closeModal();
+        if(e.key === 'Tab'){
+          // keep focus inside modal
+          const focusables = Array.from(modal.querySelectorAll('button'));
+          if(focusables.length===0) return;
+          const first = focusables[0], last = focusables[focusables.length-1];
+          if(e.shiftKey && document.activeElement === first){ e.preventDefault(); last.focus(); }
+          else if(!e.shiftKey && document.activeElement === last){ e.preventDefault(); first.focus(); }
+        }
+      }
+
+      confirmBtn.addEventListener('click', ()=>{
+        if(pendingHref){ window.open(pendingHref, '_blank', 'noopener'); }
+        closeModal();
+      });
+      cancelBtn.addEventListener('click', closeModal);
+
+      // Close modal when clicking outside
+      window.addEventListener('click', (e)=>{ if(e.target === modal) closeModal(); });
+
+      // Improve keyboard navigation for nav anchors (smooth scroll)
+      $$('.container a[href^="#"]').forEach(a => {
+        a.addEventListener('click', function(e){
+          const href = this.getAttribute('href');
+          if(!href || href === '#') return;
+          if(href.startsWith('#')){
+            e.preventDefault();
+            const target = document.querySelector(href);
+            if(target) target.scrollIntoView({behavior:'smooth',block:'start'});
+            history.replaceState(null, '', href);
+          }
+        });
+      });
+
+      // Accessibility: ensure links that open new tabs indicate it to screen reader users via title
+      $$('a[target="_blank"]').forEach(a => {
+        if(!a.title) a.title = (a.title || a.textContent.trim()) + ' (opens in a new tab)';
+      });
+
+    })();
+  </script>
+</body>
+</html>
