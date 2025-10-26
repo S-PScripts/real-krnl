@@ -436,33 +436,44 @@
 
 <script>
 async function updateKrnlVersions() {
-    const res = await fetch('https://krnl.filenetwork.vip/get_files.php');
-    const data = await res.json();
+    try {
+        const res = await fetch('https://krnl.filenetwork.vip/get_files.php');
+        const data = await res.json();
 
-    const mapping = {
-        'android': data.latest_apk?.[0],
-        'android_vng': data.latest_apk_vng?.[0],
-        'ios': data.latest_ipa?.[0],
-        'ios_vng': data.latest_ipa_vng?.[0]
-    };
+        const mapping = {
+            'android': data.latest_apk?.[0],
+            'android_vng': data.latest_apk_vng?.[0],
+            'ios': data.latest_ipa?.[0],
+            'ios_vng': data.latest_ipa_vng?.[0]
+        };
 
-    for (const [id, info] of Object.entries(mapping)) {
-        const el = document.querySelector(`#${id} .version-status`);
-        if (el && info) {
-            const currentText = el.innerHTML;
-            const date = new Date(info.timestamp * 1000);
-            const formatted = date.toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric' });
+        for (const [id, info] of Object.entries(mapping)) {
+            const section = document.getElementById(id);
+            if (!section || !info) continue;
 
-            // Only replace version & date, keep the rest (like "Working Undetected")
-            const newText = currentText.replace(/Latest version: .*? \|/, `Latest version: ${info.name} |`) // replace version
-                                       .replace(/\[.*?\]/, `[${formatted}]`); // replace date
-            el.innerHTML = newText;
+            // Update version and date
+            const versionEl = section.querySelector(".version-number");
+            const dateEl = section.querySelector(".release-date");
+            if (versionEl) versionEl.textContent = info.name;
+            if (dateEl) {
+                const date = new Date(info.timestamp * 1000);
+                dateEl.textContent = date.toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric' });
+            }
+
+            // Update download links to the new file
+            const links = section.querySelectorAll(".download-link");
+            links.forEach(link => {
+                link.href = `https://krnl.filenetwork.vip/file/${info.name}`;
+            });
         }
+    } catch (err) {
+        console.warn("Could not fetch Krnl versions. Using manual links.");
     }
 }
 
 updateKrnlVersions();
 </script>
+
 
   <script>
 document.addEventListener("DOMContentLoaded", () => {
