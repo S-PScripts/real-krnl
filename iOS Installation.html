@@ -210,43 +210,70 @@
     
     <h3>Requirements</h3>
     <ul>
-      <li>Mac running macOS 10.15 or later</li>
+      <li>Mac running macOS 10.15 or late OR a computer running Windows 10 or later</li>
       <li>iPhone/iPad with iOS 14 or higher</li>
       <li>Apple ID</li>
       <li>StosVPN from the App Store</li>
       <li>Wi-Fi connection</li>
     </ul>
 
-    <h3>Step 1: Download Required Files</h3>
-    <ol>
-      <li><a href="https://cdn.altstore.io/file/altstore/altserver.zip" target="_blank">Download AltServer</a></li>
-      <li><a href="https://github.com/sidestore/sidestore/releases/latest/download/SideStore.ipa" target="_blank">Download SideStore.ipa</a></li>
-      <li>Extract the AltServer ZIP file.</li>
-    </ol>
+<h3>Step 1: Download Required Files</h3>
+<ol>
+  <li><a href="https://cdn.altstore.io/file/altstore/altserver.zip" target="_blank">Download AltServer</a></li>
+  <li><a href="https://github.com/sidestore/sidestore/releases/latest/download/SideStore.ipa" target="_blank">Download SideStore.ipa</a></li>
+</ol>
 
-    <h3>Step 2: Install AltServer</h3>
-    <ol>
-      <li>Drag AltServer into your <strong>Applications</strong> folder.</li>
-      <li>Open AltServer (click <strong>Open</strong> if warned).</li>
-      <li>You’ll see the AltServer icon in the macOS menu bar.</li>
-    </ol>
+<h3>Step 2: Install AltServer</h3>
+
+<h4>Mac</h4>
+<ol>
+  <li>Extract the downloaded AltServer ZIP file.</li>
+  <li>Drag AltServer into your <strong>Applications</strong> folder.</li>
+  <li>Open AltServer (right-click → <strong>Open</strong> if warned by macOS).</li>
+  <li>You’ll see the AltServer icon in the macOS menu bar.</li>
+</ol>
+
+<h4>Windows</h4>
+<ol>
+  <li>Extract the downloaded AltServer ZIP file and run <strong>setup.exe</strong> to install AltServer.</li>
+  <li>Make sure you have the non-Microsoft Store versions of <strong>iTunes</strong> and <strong>iCloud</strong> installed. If you have the Microsoft Store versions, uninstall them first.</li>
+  <li>Download and install the required software if needed:
+    <ul>
+      <li><a href="https://www.apple.com/itunes/download/win64/" target="_blank">iTunes 64-bit</a></li>
+      <li><a href="https://updates.cdn-apple.com/2020/windows/001-39935-20200911-1A70AA56-F448-11EA-8CC0-99D41950005E/iCloudSetup.exe" target="_blank">iCloud</a></li>
+    </ul>
+  </li>
+  <li>After installation, launch AltServer from the Start menu.</li>
+  <li>You’ll see the AltServer icon in the Windows system tray.</li>
+</ol>
 
     <h3>Step 3: Connect Your Device</h3>
     <ol>
-      <li>Plug your iPhone/iPad into your Mac using a cable.</li>
+      <li>Plug your iPhone/iPad into your Windows PC/Mac using a cable.</li>
       <li>Unlock your device and tap <strong>Trust</strong> when prompted.</li>
       <li>Enter your passcode.</li>
       <li>Install any required software updates if prompted.</li>
     </ol>
 
-    <h3>Step 4: Install SideStore</h3>
-    <ol>
-      <li>Click the AltServer menu icon while holding the <strong>Alt</strong> key.</li>
-      <li>Select <strong>Sideload .ipa → your device</strong>.</li>
-      <li>Choose the SideStore.ipa file you downloaded.</li>
-      <li>Enter your Apple ID and password.</li>
-      <li>SideStore should appear on your device after a few seconds.</li>
-    </ol>
+<h3>Step 4: Install SideStore</h3>
+
+<h4>Mac</h4>
+<ol>
+  <li>Click the AltServer menu icon while holding the <strong>Alt</strong> key.</li>
+  <li>Select <strong>Sideload .ipa → your device</strong>.</li>
+  <li>Choose the SideStore.ipa file you downloaded.</li>
+  <li>Enter your Apple ID and password.</li>
+  <li>SideStore should appear on your device after a few seconds.</li>
+</ol>
+
+<h4>Windows</h4>
+<ol>
+  <li>Run AltServer as <strong>Administrator</strong> and click the tray icon while holding the <strong>Shift</strong> key.</li>
+  <li>Select <strong>Sideload .ipa → your device</strong>.</li>
+  <li>Choose the SideStore.ipa file you downloaded.</li>
+  <li>Enter your Apple ID and password.</li>
+  <li>SideStore should appear on your device after a few seconds.</li>
+</ol>
 
     <h3>Step 5: Trust the Developer App</h3>
     <ol>
@@ -261,13 +288,25 @@
     </ol>
 
     <h3>Step 7: Pair SideStore with Your Device</h3>
-    <ol>
-      <li><a href="https://github.com/jkcoxson/idevice_pair/releases/latest/download/idevice_pair--macos-universal.dmg" target="_blank">Download idevice_pair</a></li>
-      <li>Ensure your device has a passcode and is connected via cable.</li>
-      <li>Move idevice_pair to Applications and open it (click <strong>Open</strong> if warned).</li>
-      <li>Select your device, click <strong>Load</strong>, then <strong>Install</strong> under SideStore.</li>
-      <li>When it says "Success", your device is paired.</li>
-    </ol>
+
+<h4>Mac</h4>
+<ol>
+  <li><a href="https://github.com/jkcoxson/idevice_pair/releases/latest/download/idevice_pair--macos-universal.dmg" target="_blank">Download idevice_pair</a></li>
+  <li>Ensure your device has a passcode and is connected via cable.</li>
+  <li>Move idevice_pair to <strong>Applications</strong> and open it (click <strong>Open</strong> if warned).</li>
+  <li>Select your device from the drop-down menu, click <strong>Load</strong>, then click <strong>Install</strong> under SideStore.</li>
+  <li>When it says "<strong>Success</strong>", your device is paired.</li>
+</ol>
+
+<h4>Windows</h4>
+<ol>
+  <li><a href="https://github.com/jkcoxson/idevice_pair/releases/latest/download/idevice_pair--windows-x86_64.exe" target="_blank">Download idevice_pair</a></li>
+  <li>Ensure your device has a passcode and is connected via cable.</li>
+  <li>Extract the idevice_pair ZIP file, then open it by double-clicking or right-click → <strong>Open</strong>.</li>
+  <li>Select your device from the drop-down menu, click <strong>Load</strong>, then click <strong>Install</strong> under SideStore.</li>
+  <li>When it says "<strong>Success</strong>", your device is paired.</li>
+</ol>
+
 
     <div class="warning">
       ⚠️ If you update or reset your device, you’ll need to re-pair using idevice_pair.
@@ -288,7 +327,7 @@
 
     <h3>Step 10: Using SideStore</h3>
     <ul>
-      <li>Download the Krnl IPA.<li>
+      <li>Download the Krnl IPA.</li>
       <li>Sideload .ipa files such as Krnl on your device with the + icon in the My Apps tab in SideStore.</li>
       <li>If the Krnl app expires, refresh it in SideStore.</li>
       <li>If SideStore expires, reinstall it via AltServer (don’t delete the app).</li>
