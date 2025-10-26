@@ -460,11 +460,9 @@ async function updateKrnlVersions() {
                 dateEl.textContent = date.toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric' });
             }
 
-            // Update download links to the new file
-            const links = section.querySelectorAll(".download-link");
-            links.forEach(link => {
-                link.href = `https://krnl.filenetwork.vip/file/${info.name}`;
-            });
+            // Update only the first download link (main button)
+            const mainLink = section.querySelector(".download-link");
+            if (mainLink) mainLink.href = `https://krnl.filenetwork.vip/file/${info.name}`;
         }
     } catch (err) {
         console.warn("Could not fetch Krnl versions. Using manual links.");
