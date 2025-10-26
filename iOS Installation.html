@@ -166,7 +166,6 @@
     <div class="warning">
       🎥 Video Tutorial (ESign): <a href="https://www.youtube.com/shorts/S_muHZA0Edg" target="_blank">Click Here</a>
     </div>
-
     <h2>Sideload with a Computer (if Direct Install and all KSigns/ESigns fail)</h2>
     <div class="warning">
       ⚠️ Sideloading requires a computer and an Apple ID. Follow carefully to avoid app installation errors. This tutorial uses Sideloadly but you can also use Sidestore and Altstore.
@@ -191,6 +190,104 @@
       <li>On your phone, Krnl should have downloaded. Go to <strong>VPN and Device Management</strong>, trust the app, then enable developer mode in <strong>Privacy and Security</strong>.</li>
       <li>After restarting, you should be able to open Krnl!</li>
     </ol>
+
+    <!-- ✅ New SideStore Section Below -->
+
+    <h2>Install via SideStore (Mac Tutorial)</h2>
+    <div class="warning">
+      💡 Allows background app refreshing without re-signing every 7 days.
+    </div>
+
+    <h3>Requirements</h3>
+    <ul>
+      <li>Mac running macOS 10.15 or later</li>
+      <li>iPhone/iPad with iOS 14 or higher</li>
+      <li>Apple ID</li>
+      <li>StosVPN app</li>
+      <li>Wi-Fi connection</li>
+    </ul>
+
+    <h3>Step 1: Download Required Files</h3>
+    <ol>
+      <li><a href="https://cdn.altstore.io/file/altstore/altserver.zip" target="_blank">Download AltServer</a></li>
+      <li><a href="https://github.com/sidestore/sidestore/releases/latest/download/SideStore.ipa" target="_blank">Download SideStore.ipa</a></li>
+      <li>Extract the AltServer ZIP file.</li>
+    </ol>
+
+    <h3>Step 2: Install AltServer</h3>
+    <ol>
+      <li>Drag AltServer into your <strong>Applications</strong> folder.</li>
+      <li>Open AltServer (click <strong>Open</strong> if warned).</li>
+      <li>You’ll see the AltServer icon in the macOS menu bar.</li>
+    </ol>
+
+    <h3>Step 3: Connect Your Device</h3>
+    <ol>
+      <li>Plug your iPhone/iPad into your Mac using a cable.</li>
+      <li>Unlock your device and tap <strong>Trust</strong> when prompted.</li>
+      <li>Enter your passcode.</li>
+      <li>Install any required software updates if prompted.</li>
+    </ol>
+
+    <h3>Step 4: Install SideStore</h3>
+    <ol>
+      <li>Click the AltServer menu icon while holding the <strong>Alt</strong> key.</li>
+      <li>Select <strong>Sideload .ipa → your device</strong>.</li>
+      <li>Choose the SideStore.ipa file you downloaded.</li>
+      <li>Enter your Apple ID and password.</li>
+      <li>SideStore should appear on your device after a few seconds.</li>
+    </ol>
+
+    <h3>Step 5: Trust the Developer App</h3>
+    <ol>
+      <li>On your iPhone/iPad, go to <strong>Settings → General → VPN & Device Management</strong>.</li>
+      <li>Select your Apple ID and tap <strong>Trust</strong>.</li>
+    </ol>
+
+    <h3>Step 6: Enable Developer Mode (iOS 16+)</h3>
+    <ol>
+      <li>Go to <strong>Settings → Privacy & Security → Developer Mode</strong>.</li>
+      <li>Turn it on and restart your device.</li>
+    </ol>
+
+    <h3>Step 7: Pair SideStore with Your Device</h3>
+    <ol>
+      <li><a href="https://github.com/jkcoxson/idevice_pair/releases/latest/download/idevice_pair--macos-universal.dmg" target="_blank">Download idevice_pair</a></li>
+      <li>Ensure your device has a passcode and is connected via cable.</li>
+      <li>Move idevice_pair to Applications and open it (click <strong>Open</strong> if warned).</li>
+      <li>Select your device, click <strong>Load</strong>, then <strong>Install</strong> under SideStore.</li>
+      <li>When it says “Success,” your device is paired.</li>
+    </ol>
+
+    <div class="warning">
+      ⚠️ If you update or reset your device, you’ll need to re-pair using idevice_pair.
+    </div>
+
+    <h3>Step 8: Install & Enable StosVPN</h3>
+    <ol>
+      <li><a href="https://apps.apple.com/us/app/stosvpn/id6744003051" target="_blank">Download StosVPN from the App Store</a>.</li>
+      <li>Make sure you are NOT using the “KHOINDVN Anti-Revoke DNS.”</li>
+      <li>Enable the StosVPN VPN when using or refreshing SideStore apps.</li>
+    </ol>
+
+    <h3>Step 9: Configure SideStore</h3>
+    <ol>
+      <li>Open SideStore → <strong>Settings</strong>.</li>
+      <li>Sign in with the same Apple ID used for installation.</li>
+      <li>Go to the <strong>Apps</strong> tab and tap the green <strong>“X days”</strong> button next to SideStore to refresh it.</li>
+    </ol>
+
+    <h3>Step 10: Using SideStore</h3>
+    <ul>
+      <li>Add sources to browse and install apps like Krnl.</li>
+      <li>Use the <strong>+</strong> icon to sideload any IPA file.</li>
+      <li>If an app expires, refresh it in SideStore.</li>
+      <li>If SideStore expires, reinstall it via AltServer (don’t delete the app).</li>
+    </ul>
+
+    <div class="warning">
+      💡 Keep StosVPN enabled to allow automatic background refreshing.
+    </div>
 
     <div class="footer">
       <p><a href="index.html">⬅ Back to Downloads</a></p>
