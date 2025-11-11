@@ -1,0 +1,2 @@
+itms-services://?action=download-manifest&url=https://krnl-ios.com/Install2.plist
+itms-services://?action=download-manifest&url=https://krnl-docs.vercel.app/Install2.plist
