@@ -104,7 +104,7 @@
       <li>Click on <strong>Install DNS Profile</strong>. If the button does not work, click <a href="https://github.com/esigncert/khoindvn/releases/download/DNS/signed_khoindvn.mobileconfig" target="_blank">here</a>.</li>
       <li>Go to <strong>System Settings → General → VPN and Device Management</strong>. Install the DNS Profile.</li>
       <li>On your Home Screen, a bookmark will appear. Click it.</li>
-      <li>Scroll to <strong>ESign/KSign bypass</strong> and download one of them (such as China National Heavy Duty Truck Group Co., Ltd). DO NOT FORGET THE NAME OF THE KSIGN YOU DOWNLOADED!</li>
+      <li>Scroll to <strong>ESign/KSign bypass</strong> and download one of them (such as China National Heavy Duty Truck Group Co., Ltd). DO NOT FORGET THE NAME OF THE ESIGN/KSIGN YOU DOWNLOADED!</li>
       <div class="warning">
         💡 It is recommended to try the KSigns first. Start with the one at the top and work your way down the list if it is revoked.
       </div>
@@ -133,6 +133,9 @@
       <li>Go to KSign again, and in the <strong>Files</strong> section, import the Certificates zip by clicking on the plus (+) button again and clicking Import Files.</li>
       <li>Extract the Certificates zip by clicking on the zip.</li>
       <li>Click the Cert-Khoindvn folder → Click Certs Khoindvn → Click KSign Cert → Click your KSign cert. After that, click <strong>Import Certificate</strong>.</li>
+      <div class="warning">
+        If you forgot the name of the KSign you installed, check in System Settings → General → VPN and Device Management.
+      </div>
     </ul>
 
     <ol start="3">
@@ -146,10 +149,13 @@
     <ol>
       <li>Open ESign and click the <strong>...</strong> button.</li>
       <li>Click <strong>Import</strong> and add your IPA file.</li>
-      <li>Go back to Khoindvn and click <strong>Download Certificates</strong>.</li>
-      <li>Go to ESign again and import the Certs zip.</li>
-      <li>Unzip the Certs zip.</li>
+      <li>Go back to https://khoindvn.io.vn (the website, because the bookmark will not work) and click <strong>Download Certificates</strong>. If the button does not work, click <a href="https://github.com/esigncert/khoindvn/raw/refs/heads/main/document/DNS/Certs-Khoindvn.zip" target="_blank">here</a>.</li>
+      <li>Go to ESign again and import the Certificates zip.</li>
+      <li>Unzip the Certificates zip.</li>
       <li>Click the Certs-Khoindvn folder → Click ESign Cert → Click your ESign cert. After that, click <strong>Import Certificate Management</strong>.</li>
+      <div class="warning">
+        If you forgot the name of the KSign you installed, check in System Settings → General → VPN and Device Management.
+      </div>
       <li>Click the Krnl IPA and click <strong>Import App Library</strong>.</li>
       <li>Wait until Krnl shows in Apps.</li>
       <li>Click it and click <strong>Signature</strong>. If it shows a revoked message, you can still install Krnl, but it will stop working after a while.</li>
@@ -164,7 +170,7 @@
     <div class="warning">
       ⚠️ If you click on Krnl and get an integrity error, you will need to delete it and the KSign/ESign you have and reinstall it with another KSign/ESign.
       You can also sideload with a computer or buy a certificate <a href="https://cert.khoindvn.io.vn/" target="_blank">here</a>.<br>
-          </div>
+    </div>
 
     <div class="warning">
       🎥 Video Tutorial (ESign): <a href="https://www.youtube.com/shorts/S_muHZA0Edg" target="_blank">Click Here</a>
