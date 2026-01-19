@@ -1,67 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Krnl Common Questions</title>
-  <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="icon" type="image/svg+xml" href="https://krnl.cat/assets/Krnl_Logo.svg">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Delta Android Tutorial</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="icon" type="image/svg+xml" href="https://deltaexploits.gg/assets/favicon.ico">
+
   <style>
     body {
       margin: 0;
       padding: 40px 20px;
-      font-family: 'Epilogue', sans-serif;
-      background: radial-gradient(circle at bottom, #1a0f2e 0%, #0f0a1a 50%, #000000 100%);
-      color: white;
-      line-height: 1.6;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+      color: #e0e7ff;
     }
 
     h1 {
       text-align: center;
-      color: #d9b4ff;
-      font-size: 2.4em;
+      color: #a3cef1;
+      font-size: 3em;
       font-weight: 700;
-      margin-bottom: 30px;
+      margin-bottom: 10px;
     }
 
-    .content {
-      max-width: 850px;
-      margin: 0 auto;
-      background: rgba(255, 255, 255, 0.03);
-      padding: 25px;
-      border-radius: 12px;
-      box-shadow: 0 0 20px rgba(174, 81, 255, 0.15);
-      border: 1px solid rgba(255, 255, 255, 0.05);
-    }
-
-    h2 {
-      font-size: 1.3em;
-      margin-top: 25px;
-      color: #e5ccff;
-    }
-
-    .answer {
-      margin-top: 8px;
-      color: #ddd;
-    }
-
-    .footer {
-      margin-top: 40px;
+    .subtitle {
       text-align: center;
-      font-size: 0.95em;
-      color: #aaa;
-      border-top: 1px solid #2a1e3d;
-      padding-top: 15px;
+      color: #cbd5e1;
+      font-size: 1.1em;
+      margin-bottom: 40px;
+      font-weight: 400;
+    }
+
+    .platform-section {
+      background: rgba(255, 255, 255, 0.07);
+      border-radius: 12px;
+      padding: 20px;
+      margin-bottom: 30px;
+      box-shadow: 0 0 20px rgba(163, 206, 241, 0.15);
+      border: 1px solid rgba(163, 206, 241, 0.2);
+    }
+
+    .platform-section h2 {
+      margin: 0 0 10px;
+      font-size: 1.6em;
+      color: #b5d0ff;
+    }
+
+    .version-status {
+      font-size: 1em;
+      margin-bottom: 10px;
+      color: #dbeafe;
+    }
+
+    .links {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .link-row {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    .download-link {
+      background-color: rgba(163, 206, 241, 0.3);
+      color: #0c3c78;
+      padding: 12px 20px;
+      text-decoration: none;
+      border-radius: 6px;
+      font-weight: 600;
+      transition: all 0.3s ease;
+      border: 1px solid rgba(163, 206, 241, 0.6);
+      display: inline-block;
+      width: auto;
+    }
+
+    .download-link:hover {
+      background-color: rgba(163, 206, 241, 0.5);
+      color: #fff;
+    }
+
+    .warning {
+      margin: 15px 0;
+      padding: 15px;
+      border-radius: 8px;
+      background: rgba(255, 221, 87, 0.1);
+      border: 1px solid rgba(255, 221, 87, 0.4);
+      color: #ffd966;
+      font-weight: 600;
+    }
+    
+    .footer {
+      margin-top: 60px;
+      text-align: center;
+      font-size: 1em;
+      color: #94a3b8;
+      border-top: 1px solid #1e40af;
+      padding-top: 20px;
     }
 
     .footer a {
-      color: #d9b4ff;
+      color: #a3cef1;
       text-decoration: none;
       font-weight: bold;
     }
 
     .footer a:hover {
       text-decoration: underline;
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 2em;
+      }
+
+      .platform-section h2 {
+        font-size: 1.4em;
+      }
+
+      .link-row {
+        flex-direction: column;
+      }
     }
   </style>
 </head>
