@@ -1,63 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Krnl iOS Installation Tutorial</title>
-  <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="icon" type="image/svg+xml" href="https://krnl.cat/assets/Krnl_Logo.svg">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Delta Common Questions</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="icon" type="image/svg+xml" href="https://deltaexploits.gg/assets/favicon.ico">
+
   <style>
     body {
       margin: 0;
       padding: 40px 20px;
-      font-family: 'Epilogue', sans-serif;
-      background: radial-gradient(circle at bottom, #1a0f2e 0%, #0f0a1a 50%, #000000 100%);
-      color: white;
-      line-height: 1.6;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+      color: #e0e7ff;
     }
-    h1, h2, h3 {
-      color: #d9b4ff;
-    }
+
     h1 {
       text-align: center;
-      font-size: 2.3em;
+      color: #a3cef1;
+      font-size: 3em;
       font-weight: 700;
-      margin-bottom: 30px;
-    }
-    h2 {
-      font-size: 1.8em;
-      margin-top: 40px;
-      margin-bottom: 15px;
-    }
-    h3 {
-      font-size: 1.3em;
-      margin-top: 20px;
       margin-bottom: 10px;
     }
-    .content {
-      max-width: 900px;
-      margin: 0 auto;
-      background: rgba(255, 255, 255, 0.03);
-      padding: 25px;
+
+    .subtitle {
+      text-align: center;
+      color: #cbd5e1;
+      font-size: 1.1em;
+      margin-bottom: 40px;
+      font-weight: 400;
+    }
+
+    .platform-section {
+      background: rgba(255, 255, 255, 0.07);
       border-radius: 12px;
-      box-shadow: 0 0 20px rgba(174, 81, 255, 0.15);
-      border: 1px solid rgba(255, 255, 255, 0.05);
+      padding: 20px;
+      margin-bottom: 30px;
+      box-shadow: 0 0 20px rgba(163, 206, 241, 0.15);
+      border: 1px solid rgba(163, 206, 241, 0.2);
     }
-    ol {
-      margin: 0;
-      padding-left: 20px;
+
+    .platform-section h2 {
+      margin: 0 0 10px;
+      font-size: 1.6em;
+      color: #b5d0ff;
     }
-    li {
+
+    .version-status {
+      font-size: 1em;
       margin-bottom: 10px;
+      color: #dbeafe;
     }
-    a {
-      color: #4da6ff;
+
+    .links {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .link-row {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    .download-link {
+      background-color: rgba(163, 206, 241, 0.3);
+      color: #0c3c78;
+      padding: 12px 20px;
       text-decoration: none;
+      border-radius: 6px;
       font-weight: 600;
+      transition: all 0.3s ease;
+      border: 1px solid rgba(163, 206, 241, 0.6);
+      display: inline-block;
+      width: auto;
     }
-    a:hover {
-      text-decoration: underline;
+
+    .download-link:hover {
+      background-color: rgba(163, 206, 241, 0.5);
+      color: #fff;
     }
+
     .warning {
       margin: 15px 0;
       padding: 15px;
@@ -67,36 +93,53 @@
       color: #ffd966;
       font-weight: 600;
     }
+    
     .footer {
-      margin-top: 40px;
+      margin-top: 60px;
       text-align: center;
-      font-size: 0.95em;
-      color: #aaa;
-      border-top: 1px solid #2a1e3d;
-      padding-top: 15px;
+      font-size: 1em;
+      color: #94a3b8;
+      border-top: 1px solid #1e40af;
+      padding-top: 20px;
     }
+
     .footer a {
-      color: #d9b4ff;
+      color: #a3cef1;
       text-decoration: none;
       font-weight: bold;
     }
+
     .footer a:hover {
       text-decoration: underline;
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 2em;
+      }
+
+      .platform-section h2 {
+        font-size: 1.4em;
+      }
+
+      .link-row {
+        flex-direction: column;
+      }
     }
   </style>
 </head>
 <body>
-  <h1>Installing Krnl on iOS (IPA)</h1>
+  <h1>Installing Delta on iOS (IPA)</h1>
   <div class="content">
 
     <div class="warning">
       ⚠️ If this method seems difficult, try <a href="iOS DI Installation.html">Direct Install</a>.
     </div>
 
-    <h2>Install Krnl via KSign/ESign</h2>
+    <h2>Install Delta via KSign/ESign</h2>
     <h2>Preparation</h2>
     <ol>
-      <li>Delete your current version of Krnl Roblox.</li>
+      <li>Delete your current version of Delta Roblox.</li>
       <li>Go to <a href="https://khoindvn.io.vn" target="_blank">https://khoindvn.io.vn</a> on <strong>Safari</strong>.</li>
       <div class="warning">
         ⚠️ Ignore all pop-ups/redirects! If you get redirected, just swipe back.
@@ -110,7 +153,7 @@
       </div>
       <li>Click on the ESign/KSign app you downloaded and make sure you don't get an integrity error (if you do, delete it and download another ESign/KSign).</li>
       <li>Go to <strong>System Settings → VPN and Device Management</strong>. Trust the enterprise app and restart.</li>
-      <li>Download the Krnl IPA by going to <a href="https://krnl.cat" target="_blank">https://krnl.cat</a> or typing <code>?tag zip-ios</code> in chat.</li>
+      <li>Download the Delta IPA by going to <a href="https://deltaexploits.gg" target="_blank">https://Delta.cat</a> or typing <code>?tag zip-ios</code> in chat.</li>
       <div class="warning">
       ⚠️ Only use VNG if you have a Vietnamese region-locked account.<br>
       Installing VNG will permanently lock your Roblox account to Vietnam. You will not be able to use global Roblox anymore on that account.
@@ -139,10 +182,10 @@
     </ul>
 
     <ol start="3">
-      <li>Click the Krnl IPA and click <strong>Import to Library</strong>.</li>
-      <li>Wait until Krnl shows in Downloaded Apps in Library.</li>
+      <li>Click the Delta IPA and click <strong>Import to Library</strong>.</li>
+      <li>Wait until Delta shows in Downloaded Apps in Library.</li>
       <li>Click it and click <strong>Sign and Install</strong>. Press Start Signing and wait. Click install when prompted.</li>
-      <li>Wait until the new KSign app installs, which will turn into a Krnl. You can now click it and play Roblox.</li>
+      <li>Wait until the new KSign app installs, which will turn into a Delta. You can now click it and play Roblox.</li>
     </ol>
 
     <h3>ESign Method</h3>
@@ -156,19 +199,19 @@
       <div class="warning">
         If you forgot the name of the KSign you installed, check in System Settings → General → VPN and Device Management.
       </div>
-      <li>Click the Krnl IPA and click <strong>Import App Library</strong>.</li>
-      <li>Wait until Krnl shows in Apps.</li>
-      <li>Click it and click <strong>Signature</strong>. If it shows a revoked message, you can still install Krnl, but it will stop working after a while.</li>
+      <li>Click the Delta IPA and click <strong>Import App Library</strong>.</li>
+      <li>Wait until Delta shows in Apps.</li>
+      <li>Click it and click <strong>Signature</strong>. If it shows a revoked message, you can still install Delta, but it will stop working after a while.</li>
     </ol>
 
     <div class="warning">
       If you open Roblox and it gives an update pop-up without any "Not Now" option, join the 
-      <a href="https://discord.gg/getkrnl" target="_blank">Krnl Discord server</a> 
-      and wait until the devs ping about an update for Krnl. Once they ping, delete Krnl, download the new IPA, then import and sign it.
+      <a href="https://discord.gg/getDelta" target="_blank">Delta Discord server</a> 
+      and wait until the devs ping about an update for Delta. Once they ping, delete Delta, download the new IPA, then import and sign it.
     </div>
     
     <div class="warning">
-      ⚠️ If you click on Krnl and get an integrity error, you will need to delete it and the KSign/ESign you have and reinstall it with another KSign/ESign.
+      ⚠️ If you click on Delta and get an integrity error, you will need to delete it and the KSign/ESign you have and reinstall it with another KSign/ESign.
       You can also sideload with a computer or buy a certificate <a href="https://cert.khoindvn.io.vn/" target="_blank">here</a>.<br>
     </div>
 
@@ -176,9 +219,9 @@
       🎥 Video Tutorial (ESign): <a href="https://www.youtube.com/shorts/S_muHZA0Edg" target="_blank">Click Here</a>
     </div>
 
-<h2>Install Krnl via Sideloadly (if Direct Install and all KSigns/ESigns fail)</h2>
+<h2>Install Delta via Sideloadly (if Direct Install and all KSigns/ESigns fail)</h2>
 <div class="warning">
-  ⚠️ You must use Sideloadly to sideload the IPA again every time Krnl updates or when 7 days have passed since your last sign. This is because with a free Apple ID, each signed app expires after 7 days, and Sideloadly can only re-sign via your computer.
+  ⚠️ You must use Sideloadly to sideload the IPA again every time Delta updates or when 7 days have passed since your last sign. This is because with a free Apple ID, each signed app expires after 7 days, and Sideloadly can only re-sign via your computer.
 </div>
 
 <h3>Requirements</h3>
@@ -197,17 +240,17 @@
 <ol>
   <li>Connect your computer to your phone.</li>
   <li>Go to the website and download <strong>Sideloadly</strong> on your PC.</li>
-  <li>Download the Krnl IPA.</li>
+  <li>Download the Delta IPA.</li>
   <li>Open Sideloadly and enter your Apple ID (email).</li>
-  <li>Click on IPA and select the Krnl IPA you downloaded.</li>
+  <li>Click on IPA and select the Delta IPA you downloaded.</li>
   <li>Click <strong>Start</strong>, enter your Apple ID password, and wait a few minutes.</li>
-  <li>On your phone, Krnl should have downloaded. Go to <strong>VPN and Device Management</strong>, trust the app, then enable developer mode in <strong>Privacy and Security</strong>.</li>
-  <li>After restarting, you should be able to open Krnl!</li>
+  <li>On your phone, Delta should have downloaded. Go to <strong>VPN and Device Management</strong>, trust the app, then enable developer mode in <strong>Privacy and Security</strong>.</li>
+  <li>After restarting, you should be able to open Delta!</li>
 </ol>
 
-<h2>Install Krnl via SideStore: Recommended</h2>
+<h2>Install Delta via SideStore: Recommended</h2>
 <div class="warning">
-  💡 Allows background app refreshing without a computer (after initial install) — no need to re-sign every 7 days. You’ll still need to manually re-sign new IPAs on your device whenever Krnl updates.
+  💡 Allows background app refreshing without a computer (after initial install) — no need to re-sign every 7 days. You’ll still need to manually re-sign new IPAs on your device whenever Delta updates.
 </div>
 
 <h3>Useful websites:</h3>
@@ -216,6 +259,7 @@
   <li><a href="https://discord.gg/RgpFBX3Q3k" target="_blank">Discord Server</a></li>
 </ul>
 
+<!-- not longer relevant  
 <h3>Requirements</h3>
 <ul>
   <li>Mac running macOS 10.15 or later OR a computer running Windows 10 or later (ONLY FOR INITIAL INSTALL)</li>
@@ -334,16 +378,16 @@
 
 <h3>Step 10: Using SideStore</h3>
 <ul>
-  <li>Download the Krnl IPA.</li>
-  <li>Sideload .ipa files such as Krnl on your device with the + icon in the My Apps tab in SideStore.</li>
-  <li>If the Krnl app expires, refresh it in SideStore.</li>
+  <li>Download the Delta IPA.</li>
+  <li>Sideload .ipa files such as Delta on your device with the + icon in the My Apps tab in SideStore.</li>
+  <li>If the Delta app expires, refresh it in SideStore.</li>
   <li>If SideStore expires, reinstall it via AltServer (don’t delete the app).</li>
 </ul>
 
 <div class="warning">
   💡 Keep StosVPN enabled to allow automatic background refreshing.
 </div>
-
+-->
     <div class="footer">
       <p><a href="index.html">⬅ Back to Downloads</a></p>
     </div>
