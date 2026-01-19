@@ -1,43 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Krnl Android Tutorial</title>
-  <link rel="icon" type="image/svg+xml" href="https://krnl.cat/assets/Krnl_Logo.svg">
-  <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@400;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Delta Android Tutorial</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="icon" type="image/svg+xml" href="https://deltaexploits.gg/assets/favicon.ico">
 
   <style>
     body {
       margin: 0;
       padding: 40px 20px;
-      font-family: 'Epilogue', sans-serif;
-      background: radial-gradient(circle at bottom, #1a0f2e 0%, #0f0a1a 50%, #000000 100%);
-      color: white;
-      line-height: 1.6;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+      color: #e0e7ff;
     }
 
     h1 {
       text-align: center;
-      color: #d9b4ff;
-      font-size: 2.5em;
+      color: #a3cef1;
+      font-size: 3em;
       font-weight: 700;
-      margin-bottom: 30px;
+      margin-bottom: 10px;
     }
 
-    .content {
-      max-width: 800px;
-      margin: 0 auto;
-      background: rgba(255, 255, 255, 0.03);
-      padding: 25px;
+    .subtitle {
+      text-align: center;
+      color: #cbd5e1;
+      font-size: 1.1em;
+      margin-bottom: 40px;
+      font-weight: 400;
+    }
+
+    .platform-section {
+      background: rgba(255, 255, 255, 0.07);
       border-radius: 12px;
-      box-shadow: 0 0 20px rgba(174, 81, 255, 0.15);
-      border: 1px solid rgba(255, 255, 255, 0.05);
+      padding: 20px;
+      margin-bottom: 30px;
+      box-shadow: 0 0 20px rgba(163, 206, 241, 0.15);
+      border: 1px solid rgba(163, 206, 241, 0.2);
     }
 
-    ul {
-      margin: 0;
-      padding-left: 20px;
+    .platform-section h2 {
+      margin: 0 0 10px;
+      font-size: 1.6em;
+      color: #b5d0ff;
+    }
+
+    .version-status {
+      font-size: 1em;
+      margin-bottom: 10px;
+      color: #dbeafe;
+    }
+
+    .links {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .link-row {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    .download-link {
+      background-color: rgba(163, 206, 241, 0.3);
+      color: #0c3c78;
+      padding: 12px 20px;
+      text-decoration: none;
+      border-radius: 6px;
+      font-weight: 600;
+      transition: all 0.3s ease;
+      border: 1px solid rgba(163, 206, 241, 0.6);
+      display: inline-block;
+      width: auto;
+    }
+
+    .download-link:hover {
+      background-color: rgba(163, 206, 241, 0.5);
+      color: #fff;
     }
 
     .warning {
@@ -49,18 +93,18 @@
       color: #ffd966;
       font-weight: 600;
     }
-
+    
     .footer {
-      margin-top: 40px;
+      margin-top: 60px;
       text-align: center;
-      font-size: 0.95em;
-      color: #aaa;
-      border-top: 1px solid #2a1e3d;
-      padding-top: 15px;
+      font-size: 1em;
+      color: #94a3b8;
+      border-top: 1px solid #1e40af;
+      padding-top: 20px;
     }
 
     .footer a {
-      color: #d9b4ff;
+      color: #a3cef1;
       text-decoration: none;
       font-weight: bold;
     }
@@ -68,47 +112,56 @@
     .footer a:hover {
       text-decoration: underline;
     }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 2em;
+      }
+
+      .platform-section h2 {
+        font-size: 1.4em;
+      }
+
+      .link-row {
+        flex-direction: column;
+      }
+    }
   </style>
 </head>
 <body>
-  <h1>Installing Krnl on Android</h1>
+  <h1>Installing Delta on Android</h1>
 
   <div class="content">
     <ul>
-      <li>Uninstall <strong>(Krnl)</strong> Roblox</li>
-      <li>Download the latest version of Krnl from <a href="https://krnl.cat" target="_blank">https://krnl.cat</a>. If you are Vietnamese, make sure to get the <strong>VNG</strong> version.</li>
+      <li>Uninstall <strong>(Delta)</strong> Roblox</li>
+      <li>Download the latest version of Delta from <a href="https://deltaexploits.gg/" target="_blank">https://deltaexploits.gg/</a>.</li>
     </ul>
-
-    <div class="warning">
-      ⚠️ Only use VNG if you have a Vietnamese region-locked account.
-      Installing VNG will permanently lock your Roblox account to Vietnam. You will not be able to use global Roblox anymore on that account. This is irreversible.
-    </div>
 
     <ul>
       <li>Click on the download and install</li>
-      <li>That's all! Allow Krnl to access Files so scripts can use it for settings, and auto-execute can function.</li>
+      <li>That's all! Allow Delta to access Files so scripts can use it for settings, and auto-execute can function.</li>
     </ul>
 
     <p>
       If you open Roblox and it gives an update pop-up without any "Not Now" option, join the 
-      <a href="https://discord.gg/getkrnl" target="_blank">Krnl Discord server</a> 
-      and wait until the devs ping about an update for Krnl. Once they ping, follow the steps above.
+      <a href="https://discord.gg/deltax" target="_blank">Delta Discord server</a> 
+      and wait until the devs ping about an update for Delta. Once they ping, follow the steps above.
     </p>
 
-     <h2>Using Krnl on PC (Windows/Mac) via Emulator</h2>
+     <h2>Using Delta on PC (Windows/Mac) via Emulator</h2>
 <div class="warning">
     ⚠️ If you are on an Intel Mac, you may need to use 
     <a href="https://www.hydrogen.lat/" target="_blank">Hydrogen</a>. 
     This is because there are no easily available emulators for Intel Macs. HYDROGEN IS DETECTED, AND ROBLOX CAN BAN YOU FOR USING IT.
 </div>
     
-  <p>If you are on a Windows or Silicon Mac computer, you can download an emulator to use Krnl. Here are some options:</p>
+  <p>If you are on a Windows or Silicon Mac computer, you can download an emulator to use Delta. Here are some options:</p>
   <ul>
     <li><a href="https://www.bluestacks.com" target="_blank">BlueStacks (RECOMMENDED)</a></li>
     <li><a href="https://www.ldplayer.net" target="_blank">LDPlayer (Windows Only)</a></li>
     <li><a href="https://www.mumuplayer.com/" target="_blank">MuMu Player</a></li>
   </ul>
-  <p>After installing an emulator, follow the same steps as above to install Krnl.</p>
+  <p>After installing an emulator, follow the same steps as above to install Delta.</p>
     
   <div class="warning">
     ⚠️ If you are on BlueStacks, make sure you are using an Android 13 Beta instance (create one in Multi-Instance Manager/CTRL+SHIFT+8).
@@ -119,16 +172,6 @@
     ⚠️ According to the LDPlayer help base, it is recommended to disable Hyper-V on Windows machines when running LDPlayer 9. This could also apply to other emulators such as BlueStacks.  
     Source: <a href="https://www.ldplayer.net/blog/how-to-install-enable-hyper-v-on-windows.html" target="_blank">LDPlayer guide</a>
   </div>
-
-
-
-
-          <div class="warning">
-  Video Tutorial (BlueStacks): 
-  <a href="https://www.youtube.com/watch?v=13-tFprDtpM" target="_blank">
-    Click Here
-  </a>
-</div>  
 
   </div>
 
