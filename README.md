@@ -1,5 +1,5 @@
 # real-delta - Delta Docs
-> This website is NOT updated; use https://deltadocs.net instead.
+> This website is NOT updated; use https://docs.deltaexploits.gg instead.
 
 > Delta is a free Roblox exploit (or script executor) that allows users to run custom Lua scripts within Roblox games. It’s often used for modifying gameplay, automating actions, or accessing game features not normally available. Delta is known for being stable, powerful, and frequently updated, but using it violates Roblox’s Terms of Service and can lead to account bans (if detected by Roblox, but they won't!).
 
